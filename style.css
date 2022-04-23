@@ -26,6 +26,7 @@ header {
     align-items: center;
     top: 0;
     position: fixed;
+    opacity: 1;
     overflow: hidden;
 }
 
@@ -58,7 +59,6 @@ header ul li a {
     background-size: 46%;
     background-position: 100% 55%;
     margin-top: 4%;
-    position: ;
 }
 
 h1 {
@@ -71,7 +71,7 @@ h1 {
 }
 h1,
 h2,
-p {
+.main p {
     position: absolute;
     margin-left: 18%;
 }
@@ -112,6 +112,308 @@ h2 {
     list-style: none;
 }
 
-.main {
-    
+.my-recent-works {
+    width: 100%;
+    height: 1805px;
+    background-color: #fff;
+    padding: 0 11px
+}
+
+.my-rw-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 114px 0px;
+}
+
+.my-recent-works h3 {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    margin-right: 2%;
+}
+
+.my-works-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1%;
+    grid-template-areas:
+    "p1 p1 p1"
+    "p2 p3 p4"
+    "p5 p6 p7"
+    ;
+}
+
+.p1 {
+    grid-area: p1;
+    grid-column: 1/4;
+    height: 100%;
+    display: flex;
+}
+
+.p1 img {
+    width: 60%;
+}
+
+.p1-info{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 2%;
+}
+
+.p1 .p1-title {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+#p1-para {
+    max-width: 60%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 5%;
+}
+
+.p1-lists {
+    list-style: none;
+    gap: 5px;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.p1-lists li {
+    padding: 10px 12px;
+    border: 1px solid #8993a4;
+}
+
+.p1 button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    width: 20%;
+    height: 9%;
+    background-color: #f55800;
+    color: white;
+    border: none;
+}
+
+.p2 {
+    grid-area: p2;
+    height: 100%;
+    width: 100%;
+    background-image: url(img/projects/p2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 2px solid #091E42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+#p2-button {
+    background-color: #f55800;
+    color: #fff;
+    border: none;
+    height: 12%;
+    width: 100%;
+    margin: -1%;
+    padding: 0%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px
+}
+
+.p3,
+.p6 {
+    grid-area: p3;
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
+    background-image: url(img/projects/p3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 5%;
+}
+
+.p3 .p3-fp,
+.p6 #p6-fp {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    margin: 0;
+}
+
+.p3 .p3-sp,
+.p6 #p6-sp {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    max-width: 80%;
+    margin-top: 7%;
+    margin-bottom: -23%;
+}
+
+.p3 ul,
+.p6 ul {
+    padding: 0;
+    margin-top: 31%;
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 6%;
+}
+
+.p3 li,
+.p6 li{
+    font-family: 'Inter';
+    color: #fff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    background: rgba(255, 255, 255, 0.24);
+    padding: 1% 3%;
+}
+
+.p4,
+.p7 {
+    background-color: black;
+    grid-area: p4;
+    background: linear-gradient(179.4deg, rgba(38, 38, 38, 0) 0.81%, rgba(38, 38, 38, 0.9) 84.03%);
+    background-image: url(img/projects/p4.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.p4 .p4-fp,
+.p7 #p7-fp {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #fff;
+    margin: -2% 4%;
+
+}
+
+.p4 .p4-sp,
+.p7 #p7-sp {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    max-width: 68%;
+    margin: 5% 5% -2% 5%;
+}
+
+.p4 ul,
+.p7 ul {
+    padding: 0;
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    margin: 5%;
+}
+.p4-lists li,
+.p7 li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.24);
+    padding: 1% 3%;
+}
+
+.p5 {
+    background-color: orchid;
+    grid-area: p5;
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 84.18%), url(img/projects/p2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.p5 #p5-fp {
+    font-family: 'Crete Round';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    max-width: 50%;
+    margin: -2% 4%;
+}
+.p5 #p5-sp {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    max-width: 68%;
+    margin: 5% 5% -2% 5%;
+}
+
+.p5 ul {
+    padding: 0;
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    margin: 5%;
+}
+.p5-lists li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.24);
+    padding: 1% 3%;
+}
+
+.p6 {
+    grid-area: p6;
+}
+
+.p7 {
+    grid-area: p7;
 }
